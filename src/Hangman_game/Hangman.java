@@ -65,7 +65,7 @@ public class Hangman {
     }
 
     private static void printHangman(int wrongCount){
-        System.out.println("-------");
+        System.out.println("_______");
         System.out.println("   |");
         if (wrongCount >= 1){
             System.out.println("   0");
@@ -77,12 +77,12 @@ public class Hangman {
                 System.out.print("/");
             }
             else {
-                System.out.println("");
+                System.out.println();
             }
         }
 
         if (wrongCount >= 4){
-            System.out.println("");
+            System.out.println();
             System.out.println("   |");
         }
         if (wrongCount >= 5){
@@ -91,11 +91,10 @@ public class Hangman {
                 System.out.print("\\");
             }
             else {
-                System.out.println("");
+                System.out.println();
             }
         }
-        System.out.println("");
-        System.out.println("");
+        System.out.println();
     }
     private static boolean getPlayerGuess(Scanner kb, String word, List<Character> playerGuesses){
         System.out.print("Please enter a letter: ");
