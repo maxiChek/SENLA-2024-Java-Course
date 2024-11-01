@@ -20,7 +20,6 @@ public class Hangman {
         Random rand = new Random();
 
         String word = words.get(rand.nextInt(words.size()));
-        System.out.println(word);
 
         List<Character> playerGuesses = new ArrayList<>();
 
@@ -31,6 +30,7 @@ public class Hangman {
 
             if (wrongCount >= 6){
                 System.out.println("You lost!");
+                System.out.println("The unguessed word was " + word);
                 break;
             }
             if (wrongCount >= 1 && wrongCount < 5){
@@ -94,7 +94,7 @@ public class Hangman {
                 System.out.println("");
             }
         }
-//        System.out.println("");
+        System.out.println("");
         System.out.println("");
     }
     private static boolean getPlayerGuess(Scanner kb, String word, List<Character> playerGuesses){
