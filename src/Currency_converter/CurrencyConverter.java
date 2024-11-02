@@ -44,8 +44,6 @@ public class CurrencyConverter {
         System.out.println("Actual Currency Exchange: \n 1. EUR/USD=1,089 \n 2. GBP/USD=1,296 \n 3. USD/CAD=1,391 \n 4. USD/CNY=7,12");
     }
     private static double convertCurrency(String fromCode, String toCode, double amount){
-        DecimalFormat f = new DecimalFormat("00.00");
-
         Map<String, Double> conversionRate = new HashMap<>();
 
         conversionRate.put("USD", 1.0);
