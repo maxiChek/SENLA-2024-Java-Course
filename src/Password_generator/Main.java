@@ -29,7 +29,6 @@ public class Main {
             default:
                 System.out.println("\nYou entered invalid number. Due to security issues the program has terminated.\nTry from the beginner!");
                 throw new IllegalArgumentException();
-//                break;
         }
 
         char[] password = new char[length];

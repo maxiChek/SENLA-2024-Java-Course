@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Hangman {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scan = new Scanner(new File("C:\\Users\\walls\\Documents\\CSharp&Java\\SENLA\\SENLA-2024-Java-Course\\src\\Hangman_game\\words_array.txt"));
+        Scanner scan = new Scanner(new File("src/Hangman_game/words_array.txt"));
         Scanner kb = new Scanner(System.in);
 
         List<String> words = new ArrayList<>();
