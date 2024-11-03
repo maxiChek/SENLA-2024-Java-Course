@@ -51,16 +51,6 @@ public class Hangman {
                 System.out.println("You Win!");
                 break;
             }
-
-//            System.out.println("You can now try to guess the whole word: ");
-//            if (kb.nextLine().equals(word)) {
-//                System.out.println("You Win!");
-//                break;
-//            }
-//            else {
-//                System.out.println("Nope! Try again.");
-//                wrongCount++;
-//            }
         }
     }
 
